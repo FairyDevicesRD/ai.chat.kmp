@@ -1,0 +1,97 @@
+[versions]
+# プラグインのバージョン
+android-gradle-plugin = "8.13.0"
+kotlin = "2.2.10"
+compose-multiplatform = "1.8.2"
+ksp = "2.2.10-2.0.2"
+build-konfig = "0.17.1"
+# lint
+spotless = "7.2.1"
+ktfmt = "0.58"
+
+# Common
+metro = "0.6.4"
+moko-permissions = "0.20.1"
+kotlinx-datetime = "0.7.1"
+# mimi client
+mimi-client = "0.0.2"
+# ktor
+ktor-client = "3.2.3"
+# Ktorfit
+ktorfit = "2.6.4"
+# logger
+napier = "2.7.1"
+# result
+kresult = "2.1.0"
+# markdown
+markdown = "0.35.0"
+# camera
+camerak = "0.0.12"
+# navigation
+navigation = "2.9.0"
+# Androidライブラリのバージョン
+androidx-activity-compose = "1.10.1"
+androidx-appcompat = "1.7.1"
+androidx-core-ktx = "1.17.0"
+androidx-compose-bom = "2025.08.01"
+
+[plugins]
+# プラグインの定義
+metro = { id = "dev.zacsweers.metro", version.ref = "metro" }
+android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+jetbrains-compose = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+build-konfig = { id = "com.codingfeline.buildkonfig", version.ref = "build-konfig" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ktorfit-plugin = { id = "de.jensklingenberg.ktorfit", version.ref = "ktorfit" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless"}
+
+[libraries]
+# ライブラリの定義
+# AndroidX
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx-appcompat" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidx-activity-compose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidx-compose-bom" }
+kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinx-datetime" }
+# compose
+navigation-compose = { group = "org.jetbrains.androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+# permissions
+moko-permissions = { group = "dev.icerock.moko", name = "permissions", version.ref = "moko-permissions" }
+moko-permissions-compose = { group = "dev.icerock.moko", name = "permissions-compose", version.ref = "moko-permissions" }
+moko-permissions-microphone = { group = "dev.icerock.moko", name = "permissions-microphone", version.ref = "moko-permissions" }
+moko-permissions-camera = { group = "dev.icerock.moko", name = "permissions-camera", version.ref = "moko-permissions" }
+# mimi client
+mimi-engine-core = { group = "ai.fd.mimi.client", name = "engine-core", version.ref = "mimi-client" }
+mimi-engine-ktor = { group = "ai.fd.mimi.client", name = "engine-ktor", version.ref = "mimi-client" }
+mimi-service-token = { group = "ai.fd.mimi.client", name = "service-token", version.ref = "mimi-client" }
+mimi-service-asr-core = { group = "ai.fd.mimi.client", name = "service-asr-core", version.ref = "mimi-client" }
+mimi-service-nict-asr = { group = "ai.fd.mimi.client", name = "service-nict-asr", version.ref = "mimi-client" }
+mimi-service-nict-tts = { group = "ai.fd.mimi.client", name = "service-nict-tts", version.ref = "mimi-client" }
+mimi-utils = { group = "ai.fd.mimi.client", name = "utils", version.ref = "mimi-client" }
+# ktor
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor-client" }
+ktor-client-cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor-client" }
+ktor-client-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor-client" }
+ktor-client-darwin = { group = "io.ktor", name = "ktor-client-darwin", version.ref = "ktor-client" }
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor-client" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor-client" }
+ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor-client" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor-client" }
+# ktorfit
+ktorfit-lib = { group = "de.jensklingenberg.ktorfit", name = "ktorfit-lib", version.ref = "ktorfit" }
+ktorfit-annotations = { group = "de.jensklingenberg.ktorfit", name = "ktorfit-annotations", version.ref = "ktorfit" }
+ktorfit-ksp = { group = "de.jensklingenberg.ktorfit", name = "ktorfit-ksp", version.ref = "ktorfit" }
+# logger
+napier = { group = "io.github.aakira", name = "napier", version.ref = "napier"}
+# krsult
+kotlin-result = { group = "com.michael-bull.kotlin-result", name = "kotlin-result", version.ref = "kresult" }
+# markdown
+markdown-renderer-core = { group = "com.mikepenz", name = "multiplatform-markdown-renderer", version.ref = "markdown" }
+markdown-renderer-m3 = { group = "com.mikepenz", name = "multiplatform-markdown-renderer-m3", version.ref = "markdown" }
+# camera
+camerak = { group = "io.github.kashif-mehmood-km", name = "camerak", version.ref = "camerak" }

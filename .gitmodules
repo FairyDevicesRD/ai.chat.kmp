@@ -1,0 +1,3 @@
+[submodule "library/mimi.kotlin"]
+	path = library/mimi.kotlin
+	url = https://github.com/FairyDevicesRD/mimi.client.kotlin.git

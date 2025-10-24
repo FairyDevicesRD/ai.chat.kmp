@@ -1,0 +1,40 @@
+# Gradle files
+.gradle/
+build/
+**/*.iml
+.gradle-cache/
+
+# Android Studio
+.idea/
+local.properties
+.DS_Store
+*.apk
+*.aab
+captures/
+logcat/
+
+# Kotlin Multiplatform
+/composeApp/build/
+/androidApp/build/
+/iosApp/build/
+/shared/build/
+/shared/.cxx/
+
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+Carthage/Build/
+Pods/
+.build/
+
+# IDE files
+*.iml
+.idea/
+.vscode/
+
+# Other
+*.log
+*.lock
+secrets.properties
+
