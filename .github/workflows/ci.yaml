@@ -17,7 +17,7 @@ jobs:
           - os: ubuntu-latest
             build_task: assembleRelease
           - os: macos-latest
-            build_task: iosArm64Binaries
+            build_task: iosSimulatorArm64Binaries
     runs-on: ${{ matrix.os }}
 
     steps:
@@ -75,5 +75,5 @@ jobs:
 
       - name: Run ${{ matrix.build_task }}
         env:
-          GRADLE_OPTS: ${{ startsWith(matrix.os, 'macos') && '-Xmx4g' || '' }}
+          GRADLE_OPTS: ${{ startsWith(matrix.os, 'macos') && '-Xmx8g' || '' }}
         run: ./gradlew ${{ matrix.build_task }}
