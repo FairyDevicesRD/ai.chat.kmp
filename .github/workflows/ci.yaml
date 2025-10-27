@@ -74,6 +74,4 @@ jobs:
           echo "geminiModel=gemini-2.5-flash" >> secrets.properties
 
       - name: Run ${{ matrix.build_task }}
-        env:
-          GRADLE_OPTS: ${{ startsWith(matrix.os, 'macos') && '-Xmx8g' || '' }}
         run: ./gradlew ${{ matrix.build_task }}
