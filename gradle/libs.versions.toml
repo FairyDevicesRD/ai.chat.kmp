@@ -1,39 +1,39 @@
 [versions]
 # プラグインのバージョン
-android-gradle-plugin = "8.13.0"
-kotlin = "2.2.10"
-compose-multiplatform = "1.8.2"
-ksp = "2.2.10-2.0.2"
+android-gradle-plugin = "9.1.0"
+kotlin = "2.3.20"
+compose-multiplatform = "1.10.3"
+ksp = "2.3.6"
 build-konfig = "0.17.1"
 # lint
-spotless = "7.2.1"
+spotless = "8.4.0"
 ktfmt = "0.58"
 
 # Common
-metro = "0.6.4"
+metro = "0.12.1"
 moko-permissions = "0.20.1"
 kotlinx-datetime = "0.7.1"
 # mimi client
 mimi-client = "0.0.2"
 # ktor
-ktor-client = "3.2.3"
+ktor-client = "3.4.2"
 # Ktorfit
-ktorfit = "2.6.4"
+ktorfit = "2.7.2"
 # logger
 napier = "2.7.1"
 # result
-kresult = "2.1.0"
+kresult = "2.3.1"
 # markdown
-markdown = "0.35.0"
+markdown = "0.39.2"
 # camera
-camerak = "0.0.12"
+camerak = "0.4"
 # navigation
-navigation = "2.9.0"
+navigation = "2.9.2"
 # Androidライブラリのバージョン
-androidx-activity-compose = "1.10.1"
+androidx-activity-compose = "1.13.0"
 androidx-appcompat = "1.7.1"
-androidx-core-ktx = "1.17.0"
-androidx-compose-bom = "2025.08.01"
+androidx-core-ktx = "1.18.0"
+androidx-compose-bom = "2026.03.01"
 
 [plugins]
 # プラグインの定義
